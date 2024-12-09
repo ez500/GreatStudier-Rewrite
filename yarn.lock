@@ -204,6 +204,11 @@
   dependencies:
     spark-md5 "^3.0.1"
 
+"@types/trusted-types@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -269,7 +274,7 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-braces@^3.0.2, braces@~3.0.2:
+braces@^3.0.3, braces@~3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.3.tgz#490332f40919452272d55a8480adc0c441358789"
   integrity sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==
@@ -356,6 +361,13 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+dompurify@^3.2.0:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.2.3.tgz#05dd2175225324daabfca6603055a09b2382a4cd"
+  integrity sha512-U1U5Hzc2MO0oW3DF+G9qYN0aT7atAou4AgI0XjWz061nyBPbdxkfdhfy5uMgGn6+oLFCfn44ZGbdDqCzVmlOWA==
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
+
 electron-to-chromium@^1.4.431:
   version "1.4.470"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.470.tgz#0e932816be8d5f2b491ad2aa449ea47db4785398"
@@ -416,13 +428,6 @@ fastq@^1.6.0:
   integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
-
-fill-range@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.1.1.tgz#44265d3cac07e3ea7dc247516380643754a05292"
-  integrity sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==
-  dependencies:
-    to-regex-range "^5.0.1"
 
 fill-range@^7.1.1:
   version "7.1.1"
@@ -833,10 +838,12 @@ touch@^3.1.0:
   dependencies:
     nopt "~1.0.10"
 
-trix@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.4.tgz#a2f1e37fec03c9050bc7ba1d56056e606389a46f"
-  integrity sha512-f0AGnqBV8J2qW+fCtVU71JmvzjcxnO5Xbbd6Cl2KrHVRpgXKDqNGTmDmQzNHWU7T2OgtwHwvNiN+OIf3Z3KmHQ==
+trix@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.9.tgz#01454f6b2ea498fb8a47e50bf8cc3f93689d8437"
+  integrity sha512-Hm02gmsFLjQ+gcFNUW0iwGibYpQpklBCnBUj4z5013W+q6eiZPA9d9HmeJK8jd+BMbqMq7OsVEGclrBrbl4MJw==
+  dependencies:
+    dompurify "^3.2.0"
 
 undefsafe@^2.0.5:
   version "2.0.5"

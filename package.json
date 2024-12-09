@@ -17,7 +17,7 @@
     "postcss-cli": "^10.1.0",
     "sass": "^1.64.1",
     "stimulus-hotkeys": "^2.3.0",
-    "trix": "^2.1.4",
+    "trix": "^2.1.9",
     "vanilla-nested": "^1.7.1",
     "yarn": "^1.22.19"
   },
